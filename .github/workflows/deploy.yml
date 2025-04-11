@@ -22,7 +22,7 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@54.91.238.122 << 'EOF' 
             cd /var/www/html/Cloud-Comp
-            git pull origin main
+            sudo git pull origin main
             # Restart Nginx or any other service if needed
             sudo systemctl restart nginx
           EOF
